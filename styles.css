@@ -12,8 +12,12 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #00ff7b45;
+    --text-decoration-color: #bbff00;
+    background: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .container {
@@ -40,6 +44,7 @@ body {
     box-shadow: 1px 1px 7px 7px #f5f5f5;
     padding: 30px 0;
     max-width: 900px;
+    background-color: #fff;
 }
 
 .resume__block {
@@ -165,7 +170,7 @@ body {
 
 .skills__text {
     color: var(--secondary-text-color);
-    text-align: justify;
+    text-align: left;
 }
 
 .experiences {
@@ -250,6 +255,8 @@ body {
 
 .additional-info__languages {
     margin-bottom: 20px;
+    position: static;
+
 }
 
 .additional-info__languages-header {
@@ -260,4 +267,34 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.list-rectangle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-rectangle>li {
+    position: relative;
+    display: block;
+    margin-bottom: .25rem;
+    padding: .325rem .825rem .325rem 1.325rem;
+    color: #fff;
+    background: #00ff73;
+
+}
+
+.list-rectangle>li:last-child {
+    margin-bottom: 0;
+}
+
+.list-rectangle>li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.5rem;
+    background: #d9ff00;
 }
